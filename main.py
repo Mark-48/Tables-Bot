@@ -30,4 +30,10 @@ def get_user_text(message):
         else:
             bot.send_message(message.chat.id, 'Белая')
 
+    if msgtxt.lower() == "пара":
+        bot.send_message(message.chat.id, 'Следующая пара () в ()')
+
+    if msgtxt.lower() == "пары":
+        bot.send_message(message.chat.id, 'Пары на ()')
+
 bot.polling(none_stop=True)
